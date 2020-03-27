@@ -25,9 +25,16 @@ Expected OUTPUT for this sample array:
   ]
 
 */
+let blink = ['Mark', 'Tom', "Travis"]
 
-function getStringsLength(strings) {
+function getStringsLength(array) {
+   const n = array.map(array =>{
+     return array + " contains " + array.length + " characters";
+   });
+   return n;
 }
+
+console.log(getStringsLength(blink));
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own
